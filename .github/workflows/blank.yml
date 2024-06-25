@@ -41,7 +41,12 @@ jobs:
           pip install --upgrade oApackage
           pip install openpyxl
           python orthagonal.py
-
+          
+      - name: assign git  
+        run : |
+          git config --global user.email "malay.mahajan@indexnine.com"
+          git config --global user.name "malaymahajan"
+          
       - name: check for changes
         run: git status
       - name: stage changed files
