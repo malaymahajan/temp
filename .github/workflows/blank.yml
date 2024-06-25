@@ -39,6 +39,7 @@ jobs:
       - name: Run orthagonal code
         run: |
           pip install --upgrade oApackage
+          pip install openpyxl
           python orthagonal.py
 
       - name: Run Tests
