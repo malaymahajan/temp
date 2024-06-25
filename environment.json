@@ -1,0 +1,15 @@
+{
+  "env":{
+  "staging": "stagingurl",
+  "qa": "qaurl",
+  "prod": "produrl"
+  },
+  "browser": {
+    "chrome": "chrome",
+    "firefox": "firefox",
+    "edge": "edge"
+  },
+  "window_height": 1920,
+  "window_width": 1080,
+  "receiver_email" : "bhakti.kolapkar@indexnine.com"
+}
