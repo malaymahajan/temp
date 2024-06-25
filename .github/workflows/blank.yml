@@ -35,7 +35,7 @@ jobs:
           python -m venv .venv
           source .venv/bin/activate
           pip install --upgrade robotframework-seleniumlibrary
-          /usr/bin/python orthagonal.py
+          /usr/bin/python3 orthagonal.py
 
       - name: Run Tests
         run: $GITHUB_WORKSPACE/.venv/bin/python3.12 -m robot demotest.robot
