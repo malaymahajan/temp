@@ -36,7 +36,7 @@ jobs:
           source .venv/bin/activate
           pip install --upgrade robotframework-seleniumlibrary
 
-      -name: Run orthagonal code
+      - name: Run orthagonal code
         run: |
           pip install --upgrade oApackage
           python orthagonal.py
