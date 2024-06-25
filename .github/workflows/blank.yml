@@ -36,6 +36,10 @@ jobs:
           source .venv/bin/activate
           pip install --upgrade robotframework-seleniumlibrary
 
+      - name: Run orthagonal script to create environment
+        run: |
+          python orthagonal.py
+
       - name: Run Tests
         run: $GITHUB_WORKSPACE/.venv/bin/python3.12 -m robot demotest.robot
       - name: Upload Test Report
